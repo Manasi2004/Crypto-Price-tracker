@@ -1,0 +1,97 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #1F618D;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -20px;
+    z-index: 1;
+    position: relative;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: #1F618D;
+}
+
+select {
+    padding: 10px;
+    border: 1px solid #2980B9;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-right: 10px;
+    background-color: #EBF5FB;
+    color: #1F618D;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1F618D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #154360;
+}
+
+#price-ticker {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #1F618D;
+}
+
+#price-chart {
+    width: 100%;
+    height: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+    select {
+        margin-bottom: 10px;
+    }
+}
